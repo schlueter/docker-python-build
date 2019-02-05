@@ -8,13 +8,14 @@ RUN apt-get update && \
     apt-get install -qq \
       wget \
       build-essential \
-      libpq-dev \
-      libssl-dev \
-      openssl \
+      libbz2-dev \
       libffi-dev \
       libncurses5-dev \
-      libsqlite3-dev \
+      libpq-dev \
       libreadline-dev \
+      libsqlite3-dev \
+      libssl-dev \
+      openssl \
       zlib1g-dev
 
 RUN rm -rf /var/lib/apt/lists/* /var/cache/*
